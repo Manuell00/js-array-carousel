@@ -6,7 +6,7 @@
 }
 
 #container{
-    background-color: dodgerblue;
+    background-color: rosybrown;
 }
 
 #main-row{
@@ -15,7 +15,7 @@
 }
 
 #imgButtonContainer{
-    background-color: transparent;
+    background-color: lightgrey;
     border: 3px solid black;
     border-radius: 10px;
     height: 500px;
