@@ -1,0 +1,56 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: dodgerblue;
+}
+
+#main-row{
+   position: relative;
+   height: 100vh;
+}
+
+#imgButtonContainer{
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+#imgContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgContainer img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index:100
+}
+
+#leftButton{
+    position: absolute;
+    transform: translate(0%, -50%);
+    left: 0;
+    top: 50%;
+    z-index: 100;
+}
+
+#rightButton{
+    position: absolute;
+    transform: translate(0%, -50%);
+    right: 0;
+    top: 50%;
+    z-index: 100;
+}
+
