@@ -39,8 +39,8 @@ rightButton.addEventListener("click",
 
         // Se non sono all'ultimo elemento
         if (activeItem < array.length - 1) {
-            
-            activeItem += 1
+
+            activeItem ++
 
             let immagine = array[activeItem]
 
@@ -48,11 +48,44 @@ rightButton.addEventListener("click",
 
             // Passare all'item successivo 
             console.log(activeItem)
+        }
 
-            // Se sono all'ultimo elemento faccio sparire il next
-            if (activeItem === (array.length - 1)) {
-                document.getElementById("rightButton").style.display = "none";
-            }
+        // Se sono all'ultimo elemento faccio sparire il next
+        else if (activeItem === (array.length - 1)) {
+            activeItem == 0
+
+            immagine = array[activeItem]
+
+            document.getElementById("imgContainer").innerHTML = immagine
+
+        }
+
+    }
+)
+
+
+
+// Gestisco l'evento sul click sul before
+leftButton.addEventListener("click",
+    function () {
+
+        // Se non sono all'ultimo elemento
+        if (activeItem > 0) {
+
+            activeItem -= 1
+
+            let immagine = array[activeItem]
+
+            document.getElementById("imgContainer").innerHTML = immagine
+        }
+
+        // Se sono al primo elemento faccio sparire il before
+        else if (activeItem == 0) {
+            activeItem == array.length - 1
+
+            immagine = array[activeItem]
+
+            document.getElementById("imgContainer").innerHTML = immagine
 
         }
 
