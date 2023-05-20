@@ -56,7 +56,7 @@ rightButton.addEventListener("click",
         miniatura[activeItem].classList.remove("opacityYes")
 
         // Incollo l'immagine a imgContainer
-        document.getElementById("imgContainer").innerHTML = immagine
+        imgContainer.innerHTML = immagine
     }
 )
 
@@ -89,7 +89,7 @@ leftButton.addEventListener("click",
         miniatura[activeItem].classList.remove("opacityYes")
 
         // Incollo l'immagine a imgContainer
-        document.getElementById("imgContainer").innerHTML = immagine
+        imgContainer.innerHTML = immagine
     }
 )
 
